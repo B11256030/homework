@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--js-->
+    <script language="JavaScript">
+        //宣告
+        var a = 'A';
+        b = 'B';
+        c = '1';
+        d = '2';
+    </script>
+    <!--樣式-->
+    <style>
+        body {
+            color: blue;
+        }
+
+        td {
+            border: orange dotted;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table style="size: 50pt;border:3px red dashed;">
+        <tr>
+            <td>　</td>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td style="background-color: yellow;">
+                <script>
+                    a1 = document.write('<h1>' + a + c); //A1
+                </script>
+            </td>
+            <td style="background-color: green;">
+                <script>
+                    a2 = document.write('<h1>' + a + d); //A2
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td style="background-color: yellow;">
+                <script>
+                    b1 = document.write('<h1>' + b + c); //B1
+                </script>
+            </td>
+            <td style="background-color: green;">
+                <script>
+                    b2 = document.write('<h1>' + b + d); //B2
+                </script>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

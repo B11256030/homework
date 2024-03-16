@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習五</title>
+</head>
+
+<body>
+    <script>
+        window.onload = function() {
+            //提示用戶輸入數字A
+            var numberA = prompt("請輸入數字A", " ");
+            //提示用戶輸入數字B
+            var numberB = prompt("請輸入數字B", " ");
+
+            //在網頁上顯示輸入的兩個數字及其型態
+            document.write("您輸入的數字A為: " + numberA + "，型態為: " + typeof(parseInt(numberA)) + "<br>");
+            document.write("您輸入的數字B為: " + numberB + "，型態為: " + typeof(parseInt(numberB)) + "<br>");
+
+            //將輸入的數字轉換為整數並進行加、減、乘、除的計算
+            var numA = parseInt(numberA);
+            var numB = parseInt(numberB);
+            var sum = numA + numB;
+            var difference = numA - numB;
+            var product = numA * numB;
+            var quotient = numA / numB;
+
+            //在網頁上顯示計算結果
+            document.write("加法結果: " + sum + "<br>");
+            document.write("減法結果: " + difference + "<br>");
+            document.write("乘法結果: " + product + "<br>");
+            document.write("除法結果: " + quotient + "<br>");
+        }
+    </script>
+</body>
+
+</html>

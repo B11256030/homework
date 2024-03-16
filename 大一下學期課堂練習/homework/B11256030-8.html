@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var money = prompt("請輸入所得")
+        var a = 0
+        if (money >= 0 & money <= 500000)
+            a = money * 0.05;
+
+        else if (money > 500000 & money <= 1130000)
+            a = money * 0.12;
+
+        else if (money > 1130000 & money <= 2260000)
+            a = money * 0.2;
+
+        else if (money > 2260000 & money <= 4230000)
+            a = money * 0.3;
+
+        else if (money > 4230000)
+            a = money * 0.4;
+        alert("須納稅" + a + "元");
+    </script>
+</body>
+
+</html>

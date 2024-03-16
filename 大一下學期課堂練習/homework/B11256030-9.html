@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            color: pink;
+        }
+
+        tr,
+        td {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <p>九九乘法表</p>
+    <script>
+        document.write("<table>");
+        for (let i = 1; i <= 9; i++) {
+            document.write("<tr>");
+            for (let k = 1; k <= 9; k++) {
+                document.write("<td>");
+                document.write(i + "*" + k + "=" + i * k);
+                document.write("</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+
+</body>
+
+</html>

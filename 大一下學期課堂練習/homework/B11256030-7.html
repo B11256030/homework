@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習一</title>
+    <script language="Javascript">
+        var x = prompt("請輸入你的成績:", " ");
+        var message;
+
+        switch (true) {
+            case (x < 60):
+                message = "不及格，請再加強!";
+                break;
+            case (60 <= x && x <= 69):
+                message = "及格，但有進步空間!";
+                break;
+            case (70 <= x && x <= 79):
+                message = "及格，程度達到標準!";
+                break;
+            case (80 <= x && x <= 89):
+                message = "及格，接近完美!";
+                break;
+            case (90 <= x && x <= 100):
+                message = "及格，超強，好好保持!";
+                break;
+            default:
+                message = "輸入的成績無效";
+        }
+
+        alert(message);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
